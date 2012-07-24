@@ -1,0 +1,12 @@
+pairs:
+  ab: Adam Berlin; aberlin
+  rc: Robbie Clutton; rclutton
+  et: Elie Toubiana; elie@unpakt.com
+  iz: Ian Zabel; izabel
+  rn: Richard Nuno; richard@unpakt.com
+  jm: Jono Mallanyk; jono@unpakt.com
+  ro: Ryan Ong; rong@pivotallabs.com
+  jn: John Negron; john.negron@unpakt.com
+email:
+  prefix: pair
+  domain: pivotallabs.com
