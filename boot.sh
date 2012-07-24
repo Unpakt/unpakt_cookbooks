@@ -24,7 +24,6 @@ cookbook_paths:
 - /Users/$USER/workspace
 - /Users/$USER/workspace/unpakt_cookbooks
 recipes:
-- pivotal_workstation::meta_pivotal_lion_image
 - unpakt_workstation::meta_unpakt_lion_image
 EOF
 fi
