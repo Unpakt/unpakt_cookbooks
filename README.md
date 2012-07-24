@@ -5,11 +5,10 @@
 * Set timezone
 * Create Unpakt user "Unpakt" "unpakt".  Make sure it's an administrator.
 * Install XCode:
-  * Run "App Store" app (built into Lion)
-  * Search for "Xcode"
-  * Click "Free" -> "Install" on Xcode
+  * Download the Command Line Tools for XCode from: [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
+  * Or, install XCode from the App Store
 * Wait for install to finish
-* Download  & run the bootstrap code:
+* Download & run the bootstrap code:
   
 `bash <(curl https://raw.github.com/Unpakt/unpakt_cookbooks/master/boot.sh)`
 
