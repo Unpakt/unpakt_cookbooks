@@ -5,8 +5,12 @@
 * Set timezone
 * Create Unpakt user "Unpakt" "unpakt".  Make sure it's an administrator.
 * Install XCode:
-  * Download the Command Line Tools for XCode from: [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
-  * Or, install XCode from the App Store
+  * Run "App Store" app (built into Lion)
+  * Search for "Xcode"
+  * Click "Free" -> "Install" on Xcode
+  * Wait for install to finish. It's a 1.5gb file, so it can take a while
+  * Open XCode and accept terms and conditions
+  * Download and install the Command Line Tools for XCode from: [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action)
 * Wait for install to finish
 * Download & run the bootstrap code:
   
