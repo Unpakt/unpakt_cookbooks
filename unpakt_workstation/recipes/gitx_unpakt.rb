@@ -32,6 +32,10 @@ unless File.exists?(GITX_PATH)
       raise "GitX.app was not installed" unless File.exists?(GITX_PATH)
     end
   end
+else
+  puts "*" * 10
+  puts "#{GITX_PATH} already installed"
+  puts "*" * 10
 end
 
 
@@ -52,5 +56,9 @@ unless File.exists?(GITX_LINK)
       raise "gitx link was not installed" unless File.exists?(GITX_LINK)
     end
   end
+else
+  puts "*" * 10
+  puts "#{GITX_PATH} already installed"
+  puts "*" * 10
 end
 
