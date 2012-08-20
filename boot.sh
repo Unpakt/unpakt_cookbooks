@@ -15,7 +15,7 @@ while [[ "$@" != "" ]]; do
   if [[ -d $1 ]]; then
     pushd $1 && git fetch && git checkout $3 && popd
   else
-    git clone $2 $3
+    git clone $2 && git checkout $3
   fi
   shift 3
 done
