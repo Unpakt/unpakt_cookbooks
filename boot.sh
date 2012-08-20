@@ -6,16 +6,24 @@ mkdir -p ~/workspace
 cd ~/workspace
 set -- ~/workspace/pivotal_workstation \
   https://github.com/pivotal/pivotal_workstation.git \
+  5ef105ca8b9d8361a631f12ace74e8619c7bc08b \
   ~/workspace/unpakt_cookbooks \
-  https://github.com/Unpakt/unpakt_cookbooks.git
+  https://github.com/Unpakt/unpakt_cookbooks.git \
+  HEAD
 
 while [[ "$@" != "" ]]; do
+  echo "Running $1"
   if [[ -d $1 ]]; then
-    pushd $1; git pull; popd
+    pushd $1
+    echo "Running: git fetch && git checkout $3 in $1"
+    git fetch 
+    git checkout $3
+    popd
   else
-    git clone $2
+    echo "Running: git clone $2 $3"
+    git clone $2 $3
   fi
-  shift 2
+  shift 3
 done
 
 if [[ ! -f ~/soloistrc ]]; then
