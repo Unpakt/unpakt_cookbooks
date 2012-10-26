@@ -6,7 +6,6 @@ mkdir -p ~/workspace
 cd ~/workspace
 set -- ~/workspace/pivotal_workstation \
   https://github.com/pivotal/pivotal_workstation.git \
-  5ef105ca8b9d8361a631f12ace74e8619c7bc08b \
   ~/workspace/unpakt_cookbooks \
   https://github.com/Unpakt/unpakt_cookbooks.git \
   HEAD
