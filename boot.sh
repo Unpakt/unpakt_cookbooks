@@ -2,22 +2,18 @@
 
 set -e
 
+cd
+if [[ -d ~/workspace ]]; then
+  mv workspace workspace.bak
+fi
+
 mkdir -p ~/workspace
 cd ~/workspace
-set -- ~/workspace/pivotal_workstation \
-  https://github.com/pivotal/pivotal_workstation.git \
-  ~/workspace/unpakt_cookbooks \
-  https://github.com/Unpakt/unpakt_cookbooks.git \
-  HEAD
 
-while [[ "$@" != "" ]]; do
-  if [[ -d $1 ]]; then
-    pushd $1 && git fetch && git checkout $3 && popd
-  else
-    git clone $2 && pushd $1 && git checkout $3 && popd
-  fi
-  shift 3
-done
+git clone https://github.com/pivotal/pivotal_workstation.git
+git clone https://github.com/Unpakt/unpakt_cookbooks.git
+
+mv ~/workspace.bak/unpakt ~/workspace/unpakt
 
 if [[ ! -f ~/soloistrc ]]; then
   cat > ~/soloistrc <<EOF
