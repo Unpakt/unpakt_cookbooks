@@ -4,6 +4,9 @@ set -e
 
 cd
 if [[ -d ~/workspace ]]; then
+  if [[ -d ~/workspace.bak ]]; then
+    rm -rf ~/workspace.bak
+  fi 
   mv ~/workspace ~/workspace.bak
 fi
 
