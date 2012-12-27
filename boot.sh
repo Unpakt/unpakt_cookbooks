@@ -14,8 +14,8 @@ git clone https://github.com/pivotal/pivotal_workstation.git
 git clone https://github.com/Unpakt/unpakt_cookbooks.git
 
 if [[-d ~/workspace.bak/unpakt ]]; then
-	mv ~/workspace.bak/unpakt ~/workspace/unpakt
-end
+  mv ~/workspace.bak/unpakt ~/workspace/unpakt
+fi
 
 if [[ ! -f ~/soloistrc ]]; then
   cat > ~/soloistrc <<EOF
