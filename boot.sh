@@ -4,7 +4,7 @@ set -e
 
 cd
 if [[ -d ~/workspace ]]; then
-  mv workspace workspace.bak
+  mv ~/workspace ~/workspace.bak
 fi
 
 mkdir -p ~/workspace
