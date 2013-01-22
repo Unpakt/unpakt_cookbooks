@@ -13,7 +13,7 @@ fi
 mkdir -p ~/workspace
 cd ~/workspace
 
-git clone https://github.com/pivotal/pivotal_workstation.git
+git clone https://github.com/Unpakt/pivotal_workstation.git
 git clone https://github.com/Unpakt/unpakt_cookbooks.git
 
 if [[-d ~/workspace.bak/unpakt ]]; then
